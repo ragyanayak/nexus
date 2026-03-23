@@ -1,0 +1,18 @@
+nexus-repository-manager:
+  nexus:
+    docker:
+      enabled: true
+    resources:
+      requests:
+        cpu: "500m"
+        memory: "2Gi"
+      limits:
+        cpu: "1"
+        memory: "3Gi"
+
+  persistence:
+    enabled: true
+    storageSize: 10Gi
+
+  service:
+    type: NodePort
