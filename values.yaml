@@ -11,8 +11,7 @@ nexus-repository-manager:
         memory: "3Gi"
 
   persistence:
-    enabled: true
-    storageSize: 10Gi
+    enabled: false
 
   service:
     type: NodePort
